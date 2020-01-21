@@ -21,6 +21,6 @@ Deploy from OSEv3.
 
     oc get route/bluegreen -o yaml | sed -e 's/name: blue$/name: green/' | oc replace -f -
 
-## and back again
+## and back again.
 
     oc get route/bluegreen -o yaml | sed -e 's/name: green$/name: blue/' | oc replace -f -
