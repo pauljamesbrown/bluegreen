@@ -24,3 +24,4 @@ Deploy from OSEv3.
 ## and back again
 
     oc get route/bluegreen -o yaml | sed -e 's/name: green$/name: blue/' | oc replace -f -
+    
